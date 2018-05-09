@@ -17,6 +17,7 @@
 		F1CFC00B20A28AB00042E725 /* AlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CFC00A20A28AB00042E725 /* AlertViewDemoTests.m */; };
 		F1CFC01620A28AB00042E725 /* AlertViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CFC01520A28AB00042E725 /* AlertViewDemoUITests.m */; };
 		F1CFC02620A28AEE0042E725 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CFC02520A28AEE0042E725 /* AlertView.m */; };
+		F1CFC02920A2A8330042E725 /* showImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1CFC02820A2A8330042E725 /* showImage@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F1CFC01720A28AB00042E725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1CFC02420A28AEE0042E725 /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
 		F1CFC02520A28AEE0042E725 /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		F1CFC02820A2A8330042E725 /* showImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "showImage@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		F1CFBFED20A28AAE0042E725 /* AlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F1CFC02720A2A80E0042E725 /* image */,
 				F1CFC02320A28ABF0042E725 /* AlertView */,
 				F1CFBFEE20A28AAE0042E725 /* AppDelegate.h */,
 				F1CFBFEF20A28AAE0042E725 /* AppDelegate.m */,
@@ -146,6 +149,14 @@
 				F1CFC02520A28AEE0042E725 /* AlertView.m */,
 			);
 			path = AlertView;
+			sourceTree = "<group>";
+		};
+		F1CFC02720A2A80E0042E725 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				F1CFC02820A2A8330042E725 /* showImage@2x.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CFBFFE20A28AAF0042E725 /* LaunchScreen.storyboard in Resources */,
+				F1CFC02920A2A8330042E725 /* showImage@2x.png in Resources */,
 				F1CFBFFB20A28AAF0042E725 /* Assets.xcassets in Resources */,
 				F1CFBFF620A28AAE0042E725 /* Main.storyboard in Resources */,
 			);
