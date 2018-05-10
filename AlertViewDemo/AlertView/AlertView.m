@@ -172,7 +172,10 @@
 
 //MARK: - 按钮点击事件
 -(void)itemAction:(UIButton *)btn{
-    self.AlertViewBlock(self, btn.tag, btn.titleLabel.text);
+    [self remove];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.12 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.AlertViewBlock(self, btn.tag, btn.titleLabel.text);
+    });
 }
 
 //MARK: - 显示
@@ -250,7 +253,7 @@
 -(void)setLabelLineSpace:(CGFloat)spacing andFount:(NSInteger)fount andLabel:(UILabel *)label andMaxWidth:(CGFloat)maxWidth{
     NSMutableAttributedString * attributeString = [[NSMutableAttributedString alloc] initWithString:label.text];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    BOOL isOneLine = label.text.length*11 < maxWidth;
+    BOOL isOneLine = label.text.length*fount < maxWidth;
     if (isOneLine) {
         [paragraphStyle setLineSpacing:0];
     }else{
